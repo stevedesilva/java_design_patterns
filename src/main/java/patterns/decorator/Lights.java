@@ -1,4 +1,4 @@
-package decorator;
+package patterns.decorator;
 
 public class Lights extends ChristmasTreeDecorator{
     public Lights(ChristmasTree christmasTree) {

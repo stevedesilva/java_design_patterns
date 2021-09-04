@@ -17,4 +17,8 @@ class DecoratorTest {
     public void shouldAddTinselAndAnAngelAndLights(){
         Assertions.assertEquals("plain tree with tinsel with angel with lights", new LightsDecorator(new AngelDecorator(new TinselDecorator(new TreeImpl()))).decorator());
     }
+    @Test
+    public void shouldAddTinselAndAnAngelAndLightsWithout(){
+        Assertions.assertEquals("plain tree with tinsel with angel with lights with no decoration", new WithoutAbstractDecorator(new LightsDecorator(new AngelDecorator(new TinselDecorator(new TreeImpl())))).decorator());
+    }
 }

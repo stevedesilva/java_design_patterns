@@ -1,4 +1,4 @@
-package decorator;
+package patterns.decorator;
 
 public class Angel extends ChristmasTreeDecorator{
     public Angel(ChristmasTree christmasTree) {

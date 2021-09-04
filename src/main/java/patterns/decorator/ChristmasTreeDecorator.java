@@ -1,4 +1,4 @@
-package decorator;
+package patterns.decorator;
 
 public abstract class ChristmasTreeDecorator implements ChristmasTree {
     private ChristmasTree christmasTree;

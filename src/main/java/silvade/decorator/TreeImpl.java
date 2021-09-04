@@ -8,6 +8,10 @@ public class TreeImpl implements Tree {
         this.type = "plain tree";
     }
 
+    public TreeImpl(String type) {
+        this.type = type;
+    }
+
     public String decorator() {
         return type;
     }
