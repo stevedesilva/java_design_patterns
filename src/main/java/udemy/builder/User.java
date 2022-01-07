@@ -7,7 +7,6 @@ public class User {
     private String phoneNumber;
     private String address;
 
-
     @Override
     public String toString() {
         return "User{" +
@@ -53,6 +52,11 @@ public class User {
         private int age;
         private String phoneNumber;
         private String address;
+
+        public Builder(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
 
         public Builder() {}
 
