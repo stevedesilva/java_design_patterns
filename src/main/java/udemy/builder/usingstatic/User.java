@@ -1,4 +1,4 @@
-package udemy.builder;
+package udemy.builder.usingstatic;
 
 public class User {
     private String firstName;

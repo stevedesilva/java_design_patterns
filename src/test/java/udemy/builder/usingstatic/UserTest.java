@@ -1,4 +1,4 @@
-package udemy.builder;
+package udemy.builder.usingstatic;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
