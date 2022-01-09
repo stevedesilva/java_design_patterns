@@ -21,19 +21,15 @@ public class User {
     public String getFirstName() {
         return firstName;
     }
-
     public String getLastName() {
         return lastName;
     }
-
     public int getAge() {
         return age;
     }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
-
     public String getAddress() {
         return address;
     }
