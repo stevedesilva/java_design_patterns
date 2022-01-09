@@ -8,10 +8,12 @@ class PersonTest {
 
     @Test
     public void shouldBuildUser() {
-        Person person = new Person.Builder("Steve", "de Silva")
+
+        Person person = new DefaultPerson.Builder("Steve", "de Silva")
                 .address("Somewhere over the rainbow")
                 .age(90)
-                .phoneNumber("999-999-999");
+                .phoneNumber("999-999-999")
+                .build();
 
         Assertions.assertEquals("Steve", person.getFirstName());
         Assertions.assertEquals("de Silva", person.getLastName());
