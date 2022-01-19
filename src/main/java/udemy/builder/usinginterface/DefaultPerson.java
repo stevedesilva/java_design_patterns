@@ -1,18 +1,13 @@
 package udemy.builder.usinginterface;
 
 class DefaultPerson implements Person {
-
-    // mandatory
     protected String firstName;
     protected String lastName;
-    // optional
     protected int age;
     protected String phoneNumber;
     protected String address;
 
-    public DefaultPerson() {
-    }
-
+    public DefaultPerson() { }
     public DefaultPerson(Builder builder) {
         firstName = builder.firstName;
         lastName = builder.lastName;
@@ -84,7 +79,6 @@ class DefaultPerson implements Person {
             return new DefaultPerson(this);
         }
     }
-
 }
 
 

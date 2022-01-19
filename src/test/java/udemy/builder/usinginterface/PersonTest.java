@@ -5,10 +5,8 @@ import org.junit.jupiter.api.Test;
 
 class PersonTest {
 
-
     @Test
     public void shouldBuildUser() {
-
         Person person = new DefaultPerson.Builder("Steve", "de Silva")
                 .address("Somewhere over the rainbow")
                 .age(90)
@@ -20,7 +18,6 @@ class PersonTest {
         Assertions.assertEquals(90, person.getAge());
         Assertions.assertEquals("999-999-999", person.getPhoneNumber());
         Assertions.assertEquals("Somewhere over the rainbow", person.getAddress());
-
     }
 
 }
